@@ -163,10 +163,24 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
-  .state('bolders', {
+  .state('tabsController.bolders', {
     url: '/page11',
-    templateUrl: 'templates/bolders.html',
-    controller: 'boldersCtrl'
+    views: {
+      'tab1': {
+        templateUrl: 'templates/bolders.html',
+        controller: 'boldersCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.addSource', {
+    url: '/page10',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/addSource.html',
+        controller: 'addSourceCtrl'
+      }
+    }
   })
 
 $urlRouterProvider.otherwise('/page1/page2')
