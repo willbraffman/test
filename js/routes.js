@@ -200,6 +200,26 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
+  .state('tabsController.willbraffmanSRepo', {
+    url: '/page12',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/willbraffmanSRepo.html',
+        controller: 'willbraffmanSRepoCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.gradient', {
+    url: '/page13',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/gradient.html',
+        controller: 'gradientCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/page1/page2')
 
 
