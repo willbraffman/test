@@ -313,6 +313,26 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
+  .state('tabsController.login', {
+    url: '/page16',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/login.html',
+        controller: 'loginCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.signup', {
+    url: '/page17',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/signup.html',
+        controller: 'signupCtrl'
+      }
+    }
+  })
+
 $urlRouterProvider.otherwise('/page1/page2')
 
 
