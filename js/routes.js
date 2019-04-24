@@ -163,10 +163,27 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
+  /* 
+    The IonicUIRouter.js UI-Router Modification is being used for this route.
+    To navigate to this route, do NOT use a URL. Instead use one of the following:
+      1) Using the ui-sref HTML attribute:
+        ui-sref='tabsController.bolders'
+      2) Using $state.go programatically:
+        $state.go('tabsController.bolders');
+    This allows your app to figure out which Tab to open this page in on the fly.
+    If you're setting a Tabs default page or modifying the .otherwise for your app and
+    must use a URL, use one of the following:
+      /page1/tab1/page11
+      /page1/tab2/page11
+  */
   .state('tabsController.bolders', {
     url: '/page11',
     views: {
       'tab1': {
+        templateUrl: 'templates/bolders.html',
+        controller: 'boldersCtrl'
+      },
+      'tab2': {
         templateUrl: 'templates/bolders.html',
         controller: 'boldersCtrl'
       }
