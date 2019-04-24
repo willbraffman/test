@@ -10,7 +10,7 @@ angular.module('app.routes', [])
     
 
       .state('home', {
-    url: '/page2',
+    url: '/page1',
     templateUrl: 'templates/home.html',
     controller: 'homeCtrl'
   })
