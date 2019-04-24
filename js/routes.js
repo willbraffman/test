@@ -117,7 +117,7 @@ angular.module('app.routes', [])
     controller: 'sources2Ctrl'
   })
 
-$urlRouterProvider.otherwise('')
+$urlRouterProvider.otherwise('/page1')
 
 
 });
