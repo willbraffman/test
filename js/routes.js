@@ -163,6 +163,12 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
+  .state('bolders', {
+    url: '/page11',
+    templateUrl: 'templates/bolders.html',
+    controller: 'boldersCtrl'
+  })
+
 $urlRouterProvider.otherwise('/page1/page2')
 
 
